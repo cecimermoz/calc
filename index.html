@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora de SAC | Errepar</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index_query.css">
+</head>
+<body style="overflow-x:hidden; overflow-y:hidden">
+    <div class="container">
+        <aside class="float"></aside>
+        <main class="float">
+            <div class="calcu">
+                <div class="calcu-header">
+                    <img class="float" src="https://blog.errepar.com/wp-content/uploads/2019/10/paso.png" alt="icono-calculadora">
+                    <div>
+                        <p>Calculadora de Sueldo Anual</p>
+                        <p>Complementario - SAC</p>
+                    </div>
+                </div>
+                <div class="calcu-contenido">
+                    <form action="">
+                        <div class="input">
+                            <p>Ingrese la fecha de incorporación:</p>
+                            <input required type="date" name="fecha-Inc" id="fecha" class="select">
+                        </div>
+
+                        <div class="input">
+                            <p>Semestre a calcular:</p>
+                            <input class="select" list="semestre" name="semestre" id="semestre">
+                                <datalist>
+                                    <option value="1º semestre">
+                                    <option value="2º semestre">
+                                </datalist>
+                        </div>
+
+                        <div class="input">
+                            <p>Días para la base de cálculo:</p>
+                            <input class="select" list="dias" name="dias" id="dias">
+                                <datalist>
+                                    <option value="365 días">
+                                    <option value="360 días">
+                                </datalist>
+                        </div>
+                        
+                        <div class="input">
+                            <p>Ingrese el mayor sueldo (neto) del semestre a calcular:</p><br>
+                            <input required autofocus type="number" name="valor" id="importe" class="select"><br>
+                        </div>
+                        
+                        <div class="input boton">
+                            <input id="button" type="submit" value="Calcular" onclick="getData()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <aside class="float"></aside>
+    </div>
+    <script src="index.js"></script>
+    <script src="http://momentjs.com/downloads/moment.min.js"></script>
+</body>
+</html>

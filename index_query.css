@@ -1,0 +1,65 @@
+@media screen and (max-width: 1200px) {
+    html{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+    aside{
+        display: none;
+    }
+    main{
+        width: 90%;
+    }
+    .calcu{
+        width: 80%;
+        min-width: 80%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    html{
+        font-size: 13.5px;
+    }
+    input{
+        display: block;
+    }
+    #button{
+        padding: 0.75rem 1.5rem;
+    }
+    .select{
+        margin-left: 0;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .calcu-header p{
+        font-size: 1.45rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .calcu{
+        min-width: 100%;
+        margin-top: 0;
+    }
+    .calcu-header p{
+        font-size: 1.26rem;
+    }
+    .calcu-header p:first-child{
+        margin-top: 1rem;
+    }
+    #button{
+        padding: 0.6rem 1.25rem;
+    }
+    .calcu-header img{
+        height: 75%;
+        margin-top: 2%;
+    }
+    .calcu-header{
+        padding-top: 2rem;
+    }
+    
+}

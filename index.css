@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,500&display=swap');
+*{
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif, Arial, Helvetica;
+}
+html{
+    font-size: 16px;
+}
+.container{
+    max-width: 1920px;
+    width: 100%;
+}
+aside{
+    width: 20%;
+    max-width: 420px;
+    background: #2f2f2f;
+    height: 100vh;
+}
+main{
+    width: 60%;
+   /*  background-color: aqua */;
+    height: 100vh;
+}
+.float{
+    float:left;
+}
+.calcu{
+    width: 70%;
+    max-width: 750px;
+    min-width: 500px;
+    margin: 8% auto;
+    box-shadow: -1px 5px 10px rgba(0,0,0,0.23);
+    height: 85%;
+    min-height: -webkit-fill-available;
+}
+.calcu-header{
+    background-color: #2D5185;
+    color: #fff;
+    width: 100%;
+    font-weight: 300;
+    height: 17%;
+    padding: 5%;
+}
+.calcu-header img{
+    height: 100%;
+    margin-right: 5%;
+}
+.calcu-header p{
+    font-size: 1.7rem;
+}
+.calcu-contenido{
+    padding: 5%;
+}
+.input{
+    margin: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.input:focus{
+    border: #00BF9C;
+}
+form{
+    flex-wrap: wrap;
+    align-items: space-around;
+}
+form p{
+    display: initial;
+}
+.select{
+    border-bottom: rgba(0, 191, 156, 0.45) 2px solid;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 10px 10px 5px 10px;
+}
+.select:hover{
+    background-color: #00BF9C;
+    color: white;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+.select:focus{
+    border: rgba(0, 191, 156, 0.45) 2px solid;
+    border-radius: 5px;
+}
+.select:nth-child(3){
+    margin-top: 1.5rem;
+    margin-left: 0;
+}
+#button{
+    font-size: 1.5rem;
+    border: rgba(0, 191, 156, 0.45) 2px solid;
+    border-radius: 5px;
+    padding: 0.50rem 0.75rem;
+    font-weight: 300;
+    cursor: pointer;
+    color: rgba(0, 191, 156, 0.45);
+    margin: 10% auto 0 auto;
+    display: flex;
+}
+#button:hover{
+    background-color: #00BF9C;
+    color: white;
+    transition: all 0.5s ease;
+}
